@@ -1,7 +1,7 @@
 #!/usr/bin/python3.4
 import pygame, sys
-from data.scripts.core_funcs import *
-from data.scripts.clip import clip
+from Shifting_Edge.data.scripts.core_funcs import *
+from Shifting_Edge.data.scripts.clip import clip
 
 def load_font_img(path, font_color):
     fg_color = (255, 0, 0)
