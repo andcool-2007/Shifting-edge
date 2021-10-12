@@ -2,9 +2,9 @@
 # Setup Python ----------------------------------------------- #
 import pygame, sys, math, random
 
-import data.scripts.entities as e
-import data.scripts.core_funcs as core_funcs
-import data.scripts.text as text
+import Shifting_Edge.data.scripts.entities as e
+import Shifting_Edge.data.scripts.core_funcs as core_funcs
+import Shifting_Edge.data.scripts.text as text
 
 # Setup pygame/window ---------------------------------------- #
 mainClock = pygame.time.Clock()
