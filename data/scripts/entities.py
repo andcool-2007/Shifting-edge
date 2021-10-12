@@ -1,6 +1,6 @@
 import pygame, math, os, json
 from pygame.locals import *
-from data.scripts.core_funcs import *
+from Shifting_Edge.data.scripts.core_funcs import *
 
 global e_colorkey
 e_colorkey = (255,255,255)
