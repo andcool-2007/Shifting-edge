@@ -94,7 +94,7 @@ land_s.set_volume(0.4)
 spin_s.set_volume(0.3)
 jump_s.set_volume(0.4)
 spike_attack_s.set_volume(0.25)
-pygame.mixer.music.load('data/music.ogg')
+pygame.mixer.music.load('Shifting_Edge/data/music.ogg')
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.5)
 
