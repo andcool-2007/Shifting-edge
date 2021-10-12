@@ -19,12 +19,12 @@ display = pygame.Surface((240, 160))
 pygame.mouse.set_visible(False)
 
 def load_img(img_id):
-    img = pygame.image.load('data/images/' + img_id + '.png').convert()
+    img = pygame.image.load('Shifting_Edge/data/images/' + img_id + '.png').convert()
     img.set_colorkey((0, 0, 0))
     return img
 
 def load_map(map_id):
-    map_img = pygame.image.load('data/maps/' + map_id + '.png')
+    map_img = pygame.image.load('Shifting_Edge/data/maps/' + map_id + '.png')
     map_data = []
     enemy_count = 0
     for y in range(map_img.get_height()):
@@ -56,8 +56,8 @@ def outlined_text(bg_font, fg_font, t, surf, pos):
     fg_font.render(t, surf, [pos[0], pos[1]])
 
 e.set_global_colorkey((0, 0, 0))
-e.load_animations2('data/images/animations')
-e.load_particle_images('data/images/particles')
+e.load_animations2('Shifting_Edge/data/images/animations')
+e.load_particle_images('Shifting_Edge/data/images/particles')
 
 grass_tile = load_img('grass')
 rock_tile = load_img('rock')
@@ -80,14 +80,14 @@ p_shadow_img.set_alpha(100)
 icon_img = load_img('icon')
 pygame.display.set_icon(icon_img)
 
-jump_s = pygame.mixer.Sound('data/sfx/jump.wav')
-spike_attack_s = pygame.mixer.Sound('data/sfx/spike_attack.wav')
-spike_attack_hit_s = pygame.mixer.Sound('data/sfx/spike_attack_hit.wav')
-destroy_enemy_s = pygame.mixer.Sound('data/sfx/destroy_enemy.wav')
-hit_projectile_s = pygame.mixer.Sound('data/sfx/hit_projectile.wav')
-hit_s = pygame.mixer.Sound('data/sfx/hit.wav')
-land_s = pygame.mixer.Sound('data/sfx/land.wav')
-spin_s = pygame.mixer.Sound('data/sfx/spin.wav')
+jump_s = pygame.mixer.Sound('Shifting_Edge/data/sfx/jump.wav')
+spike_attack_s = pygame.mixer.Sound('Shifting_Edge/data/sfx/spike_attack.wav')
+spike_attack_hit_s = pygame.mixer.Sound('Shifting_Edge/data/sfx/spike_attack_hit.wav')
+destroy_enemy_s = pygame.mixer.Sound('Shifting_Edge/data/sfx/destroy_enemy.wav')
+hit_projectile_s = pygame.mixer.Sound('Shifting_Edge/data/sfx/hit_projectile.wav')
+hit_s = pygame.mixer.Sound('Shifting_Edge/data/sfx/hit.wav')
+land_s = pygame.mixer.Sound('Shifting_Edge/data/sfx/land.wav')
+spin_s = pygame.mixer.Sound('Shifting_Edge/data/sfx/spin.wav')
 hit_projectile_s.set_volume(0.2)
 hit_s.set_volume(0.8)
 land_s.set_volume(0.4)
@@ -98,8 +98,8 @@ pygame.mixer.music.load('data/music.ogg')
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.5)
 
-main_font = text.Font('data/fonts/small_font.png', (168, 217, 227))
-bg_font = text.Font('data/fonts/small_font.png', (28, 17, 24))
+main_font = text.Font('Shifting_Edge/data/fonts/small_font.png', (168, 217, 227))
+bg_font = text.Font('Shifting_Edge/data/fonts/small_font.png', (28, 17, 24))
 
 
 spin_animation = [load_img('spin/spin_' + str(i)) for i in range(23)]
